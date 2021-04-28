@@ -836,16 +836,19 @@ a:focus {
 */
 
 .c-mobile-nav {
-  display: none;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
 }
 
 .has-mobile-nav .c-mobile-nav {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /*------------------------------------*\
